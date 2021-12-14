@@ -1,5 +1,5 @@
 # CHAT-BOT
-<!DOCTYPE html>
+
 <html>
 <head>
 
@@ -208,8 +208,5 @@ function placeHolder() {
 
 </script>
 
-
-</body>
-</html>
 
 
