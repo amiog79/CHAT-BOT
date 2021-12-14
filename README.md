@@ -121,7 +121,8 @@ function chatbotResponse() {
   talking = true;
   botMessage = "I'm confused"; //the default message
 
-  if (lastUserMessage === 'hi' || lastUserMessage === 'Hi' || lastUserMessage === 'HI' || lastUserMessage =='hello' || lastUserMessage =='Hello' || lastUserMessage =='HELLO') {
+  if (lastUserMessage === 'hi' || lastUserMessage === 'Hi' || lastUserMessage === 'HI'  || lastUserMessage =='hello' 
+  	                      || lastUserMessage =='Hello' || lastUserMessage =='HELLO') {
     const hi = ['hi','howdy','hello','My age is 70','I am Robot and my version is 3.6']
     botMessage = hi[Math.floor(Math.random()*(hi.length))];;
   }
