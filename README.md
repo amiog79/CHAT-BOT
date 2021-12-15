@@ -128,7 +128,7 @@ function chatbotResponse() {
   }
 
 
-  if (lastUserMessage === 'name') {
+  if (lastUserMessage === 'name' || lastUserMessage === 'Name' || lastUserMessage === 'NAME') {
     botMessage = 'My name is ' + botName;
   }
 }
