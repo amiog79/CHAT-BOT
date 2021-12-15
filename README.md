@@ -123,10 +123,17 @@ function chatbotResponse() {
 
   if (lastUserMessage === 'hi' || lastUserMessage === 'Hi' || lastUserMessage === 'HI'  || lastUserMessage =='hello' 
   	                      || lastUserMessage =='Hello' || lastUserMessage =='HELLO') {
-    const hi = ['hi','howdy','hello','My age is 70','I am Robot and my version is 3.6']
+    const hi = ['hi','howdy','hello','My age is 70','I am Robot and my version is 3.6','GOOD MORNING','GOOD BOY']
     botMessage = hi[Math.floor(Math.random()*(hi.length))];;
   }
 
+
+if (lastUserMessage=='exam' || lastUserMessage=='Exam' || lastUserMessage=='EXAM') {
+   
+    const you = ['Best of luck for 5th semester examination']
+    botMessage = you[Math.floor(Math.random()*(you.length))];;
+}
+	
 
   if (lastUserMessage === 'name' || lastUserMessage === 'Name' || lastUserMessage === 'NAME') {
     botMessage = 'My name is ' + botName;
@@ -196,6 +203,8 @@ function keyPress(e) {
   }
   if (key == 38) {
     console.log('hi')
+    console.log('you')
+	    
       //document.getElementById("chatbox").value = lastUserMessage;
   }
 }
