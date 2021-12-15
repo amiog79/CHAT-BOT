@@ -134,6 +134,14 @@ if (lastUserMessage=='exam' || lastUserMessage=='Exam' || lastUserMessage=='EXAM
     botMessage = you[Math.floor(Math.random()*(you.length))];;
 }
 	
+	
+if (lastUserMessage=='bye' || lastUserMessage=='Bye' || lastUserMessage=='BYE' || lastUserMessage=='by' || lastUserMessage=='By' 
+                                                          || lastUserMessage=='BY') {
+   
+    const bye = ['Ok Bye,and Take Care Yourself']
+    botMessage = bye[Math.floor(Math.random()*(bye.length))];;
+}
+	
 
   if (lastUserMessage === 'name' || lastUserMessage === 'Name' || lastUserMessage === 'NAME') {
     botMessage = 'My name is ' + botName;
@@ -204,6 +212,7 @@ function keyPress(e) {
   if (key == 38) {
     console.log('hi')
     console.log('you')
+    console.log('bye')	    
 	    
       //document.getElementById("chatbox").value = lastUserMessage;
   }
